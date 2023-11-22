@@ -6,6 +6,7 @@ class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -15,7 +16,7 @@ class login extends StatelessWidget {
             },
             icon: const Icon(
               Icons.arrow_back_ios,
-              size: 5,
+              size: 20,
               color: Colors.black,
             )),
       ),
@@ -27,14 +28,14 @@ class login extends StatelessWidget {
             const Column(
               children: [
                 SizedBox(
-                  height: 5,
+                  height: 20,
                 ),
                 Text(
                   "SingUp",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 20,
                 ),
                 Text(
                   "Singup and Login To Your Account",
@@ -46,7 +47,7 @@ class login extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 40,
+              height: 100,
             ),
             Padding(
               padding: const EdgeInsets.all(3.0),
@@ -67,7 +68,7 @@ class login extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 20,
                     ),
                     TextField(
                       obscureText: true,
