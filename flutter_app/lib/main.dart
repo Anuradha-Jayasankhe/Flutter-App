@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/1st_page.dart';
+import 'screens/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'flutter demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'flutter demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const login(),
       ),
-      home: const firstpage(),
     );
   }
 }
