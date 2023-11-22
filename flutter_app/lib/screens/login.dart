@@ -15,7 +15,7 @@ class login extends StatelessWidget {
             },
             icon: const Icon(
               Icons.arrow_back_ios,
-              size: 20,
+              size: 5,
               color: Colors.black,
             )),
       ),
@@ -27,17 +27,17 @@ class login extends StatelessWidget {
             const Column(
               children: [
                 SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Text(
-                  "Login",
+                  "SingUp",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Text(
-                  "Login To Your Account",
+                  "Singup and Login To Your Account",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.black45,
@@ -46,10 +46,10 @@ class login extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 100,
+              height: 40,
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(3.0),
               child: Container(
                 decoration: const BoxDecoration(
                     image: DecorationImage(
@@ -67,7 +67,7 @@ class login extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     TextField(
                       obscureText: true,
