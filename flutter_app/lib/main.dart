@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/login.dart';
+import 'screens/2ndpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const login(),
+        home: const secondpage(),
       ),
     );
   }
